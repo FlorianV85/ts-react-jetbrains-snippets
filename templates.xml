@@ -11,3 +11,13 @@
     <option name="TypeScript" value="true" />
   </context>
 </template>
+
+<template name="state" value="const [$NAME$, set$SETTER_NAME$] = useState&lt;$TYPE$&gt;($END$);" description="Create a React state" toReformat="false" toShortenFQNames="true">
+  <variable name="NAME" expression="NAME" defaultValue="" alwaysStopAt="true" />
+  <variable name="SETTER_NAME" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+  <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_SCRIPT" value="true" />
+    <option name="TypeScript" value="true" />
+  </context>
+</template>
