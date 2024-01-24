@@ -1,0 +1,13 @@
+<template name="com" value="export function $COMPONENT_NAME$() {&#10;  return $END$;&#10;}&#10;&#10;export default $COMPONENT_NAME$;" description="Create base TypeScript component depending on the file name" toReformat="false" toShortenFQNames="true">
+  <variable name="COMPONENT_NAME" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="TypeScript" value="true" />
+  </context>
+</template>
+
+<template name="comp" value="export type $COMPONENT_NAME$Props = {&#10;  $END$&#10;}&#10;&#10;export function $COMPONENT_NAME$(props: $COMPONENT_NAME$Props) {&#10;  return $END$;&#10;}&#10;&#10;export default $COMPONENT_NAME$;" description="Create base TypeScript component with props depending on the file name" toReformat="false" toShortenFQNames="true">
+  <variable name="COMPONENT_NAME" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="TypeScript" value="true" />
+  </context>
+</template>
